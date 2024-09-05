@@ -1,0 +1,70 @@
+.header{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E9EAEA;
+
+    &__main-content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    ::ng-deep .header__btn .p-button {
+        background-color: #23272713;
+        border-color: transparent;
+        width: 32px;
+        height: 32px;
+    }
+    
+    ::ng-deep .header__btn .p-button:hover {
+        background-color: #c4c9c9; 
+    }
+
+    &__title{
+        
+        width: 123px;
+        height: 12px;     
+
+        &--text {
+            color: #1C1C28;
+            font-family: 'Neo Sans Arabic';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: left;
+        }
+    }
+
+    &__edit-btn{
+
+        ::ng-deep .header__edit-btn .p-button {
+            background-color: #F9F9F9;
+            width: 88px;
+            height: 34px;
+            color: #8A74F9;
+            border-radius: 4px;
+            border: 1px solid #E9EAEA;
+        }
+
+        ::ng-deep .header__edit-btn .p-button .p-button-label{
+            width: 33px;
+            color: #1C1C28;
+            font-family: Neo Sans Arabic;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+        }
+
+        ::ng-deep .header__edit-btn .p-button-icon-right{
+            width: 18px;
+            height: 18px;
+ 
+        }
+    }
+
+    
+}

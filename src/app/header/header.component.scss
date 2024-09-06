@@ -1,14 +1,14 @@
 .header{
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #E9EAEA;
 
     &__main-content {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
 
@@ -62,9 +62,6 @@
         ::ng-deep .header__edit-btn .p-button-icon-right{
             width: 18px;
             height: 18px;
- 
         }
     }
-
-    
 }

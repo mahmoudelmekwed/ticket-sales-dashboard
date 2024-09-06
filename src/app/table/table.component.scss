@@ -1,0 +1,97 @@
+.table-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right{
+  display: flex;
+  gap: 3px;
+}
+
+.header-left{
+  display: flex;
+  gap: 3px;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 97.1px;
+    gap: 4px;
+    height: 29.88px;
+}
+
+.rounded-content {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 29.88px;
+}
+
+.fallback-text {
+    background-color: #ccc; 
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 11.62px;
+    font-weight: 600;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-name {
+    margin-bottom: 2px;
+    font-family: 'Neo Sans Arabic';
+    font-size: 11.62px;
+    font-weight: 400;
+    line-height: 19.92px;
+}
+
+.user-phone {
+    width: 58px;
+    font-family: 'Poppins';
+    font-size: 9.96px;
+    font-weight: 400;
+    line-height: 19.92px;
+    text-align: left; 
+    color: #92A1AD;
+}
+
+
+.ticket-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .ticket-icon-left,
+  .ticket-icon-right {
+    font-size: 1.2em; 
+    cursor: pointer; 
+  }
+  
+  .ticket-icon-left {
+    margin-right: 5px; 
+  }
+  
+  .ticket-icon-right {
+    margin-left: 5px;
+  }
+
+  .ticket-details {
+    font-size: 0.8em;
+    color: gray; 
+    margin-left: 5px;
+  }
+
+  ::ng-deep .p-paginator {
+    direction: ltr; 
+  }
+
+
+

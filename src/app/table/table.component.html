@@ -1,0 +1,121 @@
+<div class="card">
+    <p-table
+        #dt2
+        [value]="accounts"
+        dataKey="id"
+        [rows]="4"
+        [globalFilterFields]="['id', 'userData.name', 'ticketNo', 'ticketValue', 'cinema', 'ticket.ticketName']"
+        [paginator]="true"
+        [rowsPerPageOptions]="[4, 8, 12, 16, 20]"
+        [showCurrentPageReport]="true"
+        currentPageReportTemplate="عرض {last} من اصل{totalRecords}"
+        >
+        <ng-template pTemplate="caption">
+            <div class="table-header-container">
+                <div class="header-right">
+                    <div class="table-header">مبيعات التذاكر</div>
+                    <div class="flex">
+                        <p-iconField iconPosition="left" class="ml-auto">
+                            <p-inputIcon>
+                                <i class="pi pi-search"></i>
+                            </p-inputIcon>
+                            <input 
+                                pInputText 
+                                type="text" 
+                                (input)="dt2.filterGlobal($any($event.target).value, 'contains')" 
+                                placeholder="بحث عن ..." />
+                        </p-iconField>
+                    </div>
+                    <p-button class="setting" icon="pi pi-sliders-h"/>
+                    <p-button class="sort" icon="pi pi-sort-alt"/>
+                </div>
+                <div class="header-left">
+                    <div class="flex justify-content-center align-items-center mb-4 gap-2">
+                        <p-inputSwitch [(ngModel)]="metaKey" inputId="input-metakey" />
+                        <label for="input-metakey">{{ metaKey ? 'مفعلة' : 'غير مفعلة' }}</label>
+                    </div>
+                    <div class="card flex justify-content-center">
+                        <p-button label="حجز تذكرة جديدة" />
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>#</th>
+                <th>المستخدم</th>
+                <th>رقم التذكرة</th>
+                <th pSortableColumn="ticketValue">
+                    قيمة التذكرة <p-sortIcon field="ticketValue" />
+                </th>
+                <th>السينمات</th>
+                <th>عدد الأشخاص</th>
+                <th>عدد مرات الشراء</th>
+                <th>التذكرة</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-account>
+            <tr>
+                <td>
+                    {{ account.id }}
+                </td>
+                <td>
+                    <div class="content-wrapper">
+                      <ng-container *ngIf="account.userData.image; else fallbackText">
+                        <img 
+                          [src]="account.userData.image" 
+                          class="rounded-content"
+                          alt="User Image" 
+                        />
+                      </ng-container>
+                      <ng-template #fallbackText>
+                        <span class="rounded-content fallback-text">Ma</span>
+                      </ng-template>
+                  
+                      <div class="user-info">
+                        <span class="user-name">{{ account.userData.name }}</span>
+                        <span class="user-phone">{{ account.userData.phoneNumber }}</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    {{ account.ticketNo }}
+                </td>                  
+                  <td>
+                    {{ account.ticketValue }}
+                </td>                  
+                  <td>
+                    {{ account.cinema }}
+                </td>                  
+                  <td>
+                    {{ account.personCount }}
+                </td>                  
+                  <td>
+                    {{ account.purchasingCount }}
+                </td>                  
+                  <td>
+                    <div class="ticket-content">
+                        <p-button 
+                        icon="pi pi-ticket"
+                        class="ticket-icon-right" 
+                        />
+                        <span>{{ account.ticket.ticketName }}</span>
+                        <span class="ticket-details">{{ account.ticket.ticketDetails }}</span>
+
+                        <p-button
+                        icon="pi pi-download"
+                        class="ticket-icon-left"
+                        (click)="downloadTicket(account.ticket.ticketDetails, account.ticket.ticketName)"
+                        />
+                      </div>
+                </td>  
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="7">No customers found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+

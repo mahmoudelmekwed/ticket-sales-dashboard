@@ -7,13 +7,13 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { TableModule, Table } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
-import { Account } from '../models/interfaces/user';
-import { dummyAccounts } from '../constant/ticket.const';
+import { dummyAccounts } from '../shared/constant/ticket.const';
 import { FileDownloadService } from '../services/file-download.service';
 import { FormsModule } from '@angular/forms';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { Account } from '../shared/models/interfaces/user';
 
 @Component({
   selector: 'app-table',

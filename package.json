@@ -22,6 +22,7 @@
     "angularx-qrcode": "^18.0.1",
     "file-saver": "^2.0.5",
     "jspdf": "^2.5.1",
+    "ngx-echarts": "^18.0.0",
     "ngx-filesaver": "^18.0.0",
     "primeicons": "^7.0.0",
     "primeng": "^17.18.9",

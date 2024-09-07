@@ -7,3 +7,23 @@
     direction: ltr;
     text-align: left;
 }
+
+.app-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    gap: 18px;
+}
+
+.chart{
+    width: 70%;
+}
+
+.card{
+    width: 30%;
+}

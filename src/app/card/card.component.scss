@@ -1,48 +1,120 @@
 .card {
-    width: 408px;
-    height: 264px;
+    // width: 408px;
+    // height: 264px;
+    width: 100%;
+    height: 100%;
     border-radius: 12.47px;
     background: #8A74F9;
     display: flex;
     flex-direction: column;
 }
 
+
 .upper-card{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 5px;
 }
 
 .offer{
     display: flex;
-    justify-content: left;
-    gap: 10%;
-    padding-top: 5%;
-    padding-left: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15%; 
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+
+.title{
+    font-family: 'Neo Sans Arabic';
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    // margin-right: 35%;
+}
+
+::ng-deep .offer .delete .p-button {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .copy-section{
     display: flex;
     justify-content: center;
+    padding-inline: 10%;
+}
+
+::ng-deep .copy-section .p-button {
+    background-color: #E9EAEA;
+    color: #1C1C28;
+    border: 2px dashed #8A74F9;
+    padding-inline: 10px;
+}
+
+::ng-deep .copy-section .p-button:hover {
+    background-color: #d0d3d0; 
+}
+
+::ng-deep .copy-section .p-button .pi-clone {
+    color: #8A74F9; 
 }
 
 .end-date{
     display: flex;
     justify-content: center;
+    font-family: 'Neo Sans Arabic';
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 .lower-card{
     display: flex;
     justify-content: space-between;
+    padding-inline: 5%;
+    padding-bottom: 5%;
 }
 
 .share-offer{
     display: flex;
-
+    align-items: flex-end;
+    gap: 5px;
 }
 
 .discount{
-    width: 36px;
-    height: 43px;
+    width: 25%;
+    color: #FFFFFF;
+    font-family: 'Neo Sans Arabic';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.discount span {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.share-btn{
+    
+}
+
+::ng-deep .share-btn .p-button {
+    background-color: #8A74F9;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding-inline: 10px;
+    width: 90px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+::ng-deep .share-btn .p-button:hover {
+    background-color: #d9a9f0; 
 }
 
 .qr-code-section{
@@ -51,4 +123,36 @@
     border-radius: 4px;
     overflow: hidden;
     margin-left: 5%;
+}
+
+.divider .p-divider-horizontal{
+    color: #8A74F9;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #E9EAEA;
+    border-top-color: #E9EAEA;
+    border-right-color: #E9EAEA;
+    border-radius: 50%;
+    z-index: 10;
+    background-color: #E9EAEA;
+}
+
+.divider::before {
+    left: -12px; /* Adjust positioning as necessary */
+}
+
+.divider::after {
+    right: -12px; /* Adjust positioning as necessary */
 }

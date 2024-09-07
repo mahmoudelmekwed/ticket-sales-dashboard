@@ -1,0 +1,32 @@
+.date-range-wrapper {
+    display: flex;
+    align-items: center;
+    width: 227px;
+    height: 13px;
+  }
+  
+  .date-range-display {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Neo Sans Arabic';
+    line-height: 12.9px;
+    color: #99A1B7;
+  }
+
+  ::ng-deep .date-range-wrapper .p-button {
+    background-color: transparent;
+    color: #92A1AD;
+    border: 1.21px;
+    width: fit-content;
+    padding: 0;
+}
+
+::ng-deep .date-range-wrapper .p-button:hover {
+  background-color: #c4c9c9; 
+}
+  
+  // .date-range-picker {
+  //   margin-top: 10px;
+  //   display: flex;
+  //   gap: 20px;
+  // }

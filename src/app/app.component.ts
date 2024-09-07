@@ -4,11 +4,12 @@ import { HeaderComponent } from "./header/header.component";
 import { TableComponent } from './table/table.component';
 import { LanguageService } from './services/language.service';
 import { CardComponent } from "./card/card.component";
+import { ChartComponent } from "./chart/chart.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, TableComponent, CardComponent],
+  imports: [RouterOutlet, HeaderComponent, TableComponent, CardComponent, ChartComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

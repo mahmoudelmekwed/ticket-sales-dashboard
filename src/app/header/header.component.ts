@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { ticketDetails } from '../constant/ticket.const';
+import { ticketDetails } from '../shared/constant/ticket.const';
 
 @Component({
   selector: 'app-header',

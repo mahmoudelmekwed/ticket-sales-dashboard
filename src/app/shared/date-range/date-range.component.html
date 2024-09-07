@@ -1,0 +1,19 @@
+<div class="date-range-wrapper">
+    <span class="date-range-display">
+      {{ formatDate(dateRangeForm.value.startDate) }} - {{ formatDate(dateRangeForm.value.endDate) }}
+    </span>
+    <button pButton icon="pi pi-angle-down" (click)="toggleDatePicker()"></button>
+  </div>
+  
+  <!-- <div *ngIf="isDatePickerVisible" class="date-range-picker">
+    <div class="p-field">
+      <p-calendar [(ngModel)]="startDate" [showButtonBar]="true" (onSelect)="onStartDateChange($event)"></p-calendar>
+    </div>
+  
+    <div class="p-field">
+      <p-calendar [(ngModel)]="endDate" [showButtonBar]="true" (onSelect)="onEndDateChange($event)"></p-calendar>
+    </div>
+  
+    <button pButton label="Confirm" (click)="confirmDateRange()"></button>
+  </div> -->
+  

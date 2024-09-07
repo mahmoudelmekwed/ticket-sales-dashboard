@@ -1,3 +1,42 @@
 <section class="card">
-    
+    <div class="upper-card">
+        <div class="offer">
+            <div class="title">عرض التذكرة الخاصة بالفيلم</div>
+            <div class="delete">
+                <p-button  
+                icon="pi pi-trash"
+                [pTooltip]="tooltipContent"
+                tooltipPosition="bottom" />
+                <ng-template #tooltipContent>
+                    <div class="flex align-items-center">
+                        <span>حذف</span>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+        <div class="copy-section">
+            <p-button 
+                icon="pi pi-clone" 
+                [label]="textToCopy" 
+                (click)="copyToClipboard()"
+                iconPos="right"
+            ></p-button>
+        </div>
+        <div class="end-date">فعال حتي 15 يوليو 2023</div>
+    </div>
+    <p-divider class="divider" type="dashed"></p-divider>
+    <div class="lower-card">
+        <div class="share-offer">
+            <div class="discount">خصم 25%</div>
+            <div class="share-btn">
+                <p-button 
+                icon="pi pi-send" 
+                [label]="shareText" 
+            ></p-button>
+            </div>
+        </div>
+        <div class="qr-code-section">
+            <qrcode [qrdata]="qrData" [width]="82"></qrcode>
+          </div>
+    </div>
 </section>

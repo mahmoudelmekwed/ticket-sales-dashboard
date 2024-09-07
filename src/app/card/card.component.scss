@@ -1,3 +1,54 @@
-.card{
-    
+.card {
+    width: 408px;
+    height: 264px;
+    border-radius: 12.47px;
+    background: #8A74F9;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.offer{
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.copy-section{
+    display: flex;
+    justify-content: center;
+}
+
+.end-date{
+    display: flex;
+    justify-content: center;
+}
+
+.lower-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-offer{
+    display: flex;
+
+}
+
+.discount{
+    width: 36px;
+    height: 43px;
+}
+
+.qr-code-section{
+    width: 82px;
+    height: 82px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: 5%;
 }

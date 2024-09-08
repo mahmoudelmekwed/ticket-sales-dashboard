@@ -41,16 +41,22 @@
 }
 
 .copy-section{
-    display: flex;
-    justify-content: center;
-    padding-inline: 10%;
+    padding-inline: 20%;
 }
 
 ::ng-deep .copy-section .p-button {
+    width: 100%;
     background-color: #E9EAEA;
     color: #1C1C28;
     border: 2px dashed #8A74F9;
     padding-inline: 10px;
+}
+
+::ng-deep .copy-section .p-button .p-button-label{
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 500;
+    color: #1C1C28;
 }
 
 ::ng-deep .copy-section .p-button:hover {
@@ -156,3 +162,4 @@
 .divider::after {
     right: -12px; /* Adjust positioning as necessary */
 }
+

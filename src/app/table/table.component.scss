@@ -1,16 +1,138 @@
+::ng-deep .p-datatable .p-datatable-header{
+  background-color: #E9EAEA;
+  padding-left: 0;
+}
+
 .table-header-container {
   display: flex;
   justify-content: space-between;
+  background-color: #E9EAEA;
+  align-items: center;
 }
+
 
 .header-right{
   display: flex;
-  gap: 3px;
+  align-items: center;
+  gap: 5px;
+}
+
+.bars-icon{
+  display: flex;
+  gap: 5px;
+}
+
+::ng-deep .p-icon-field-left > .p-inputtext {
+  height: 36px;
+  font-family: 'Neo Sans Arabic';
+}
+
+::ng-deep .header-right .setting .p-button, 
+::ng-deep .header-right .sort .p-button {
+    width: 36px;
+    height: 36px;
+    border: 0.75px solid #92A1AD66; 
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px; 
+    color: #3b414666; 
+}
+
+/* Add hover effect for the buttons */
+::ng-deep .header-right .p-button:hover {
+    background-color: #8A74F9; 
+    color: #FFFFFF; 
+    border-color: #8A74F9; 
+}
+
+.table-header{
+  font-family: 'Neo Sans Arabic';
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #1C1C28;
 }
 
 .header-left{
   display: flex;
-  gap: 3px;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch-input{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch-input label{
+  color: #9C9D9F;
+  font-family: 'Neo Sans Arabic';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider  {
+  background: #8A74F9;
+}
+
+::ng-deep .ticket-reserve .p-button{
+    width: 120px;
+    height:35px;
+    padding: 13px 10px 13px 10px;
+    gap: 8px;
+    border-radius: 6px;
+    background-color: #8A74F9;
+}
+
+::ng-deep .ticket-reserve .p-button:hover{
+  background-color: #937ee9; 
+  border-color: #FCFCFC;
+}
+
+::ng-deep .ticket-reserve .p-button .p-button-label {
+  font-family: 'Neo Sans Arabic';
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color:#FCFCFC ;
+}
+
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th {
+  background-color: #f2f3f7;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th:last-child {
+  border-left: 5px solid white;
+  border-top-left-radius: 10px; 
+}
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th:first-child {
+  border-right: 5px solid white;
+  border-top-right-radius: 10px; 
+}
+
+.th-content {
+  font-family: 'Neo Sans Arabic';
+  font-size: 13.28px;
+  font-weight: 400;
+  text-align: center;
+  color: #ABAAB1;
+}
+
+
+.account-id{
+  font-family: 'Inter';
+  font-size: 13.28px;
+  font-weight: 400;
+  line-height: 23.24px;
 }
 
 .content-wrapper {
@@ -62,36 +184,158 @@
     color: #92A1AD;
 }
 
+.ticket-no{
+  font-family: 'Inter';
+  font-size: 13.28px;
+  font-weight: 400;
+  text-align: center;
+  color: #1C1C28 ;
+}
+
+.ticket-value{
+  font-family: Inter;
+  font-size: 13.28px;
+  font-weight: 400;
+  text-align: center;
+  color: #1C1C28 ;
+}
+
+.cinema{
+  font-family: 'Neo Sans Arabic';
+  font-size: 13.28px;
+  font-weight: 400;
+  text-align: center;
+  color: #1C1C28 ;
+}
+
+.person-count{
+  font-family: 'Inter';
+  font-size: 13.28px;
+  font-weight: 400;
+  text-align: center;
+  color: #1C1C28 ;
+} 
+
+.purchase-count{
+  font-family: 'Neo Sans Arabic';
+  font-size: 13.28px;
+  font-weight: 400;
+  text-align: center;
+  color: #1C1C28 ;
+}
+
+
 
 .ticket-content {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-  }
-  
-  .ticket-icon-left,
-  .ticket-icon-right {
-    font-size: 1.2em; 
-    cursor: pointer; 
-  }
-  
-  .ticket-icon-left {
-    margin-right: 5px; 
-  }
-  
-  .ticket-icon-right {
-    margin-left: 5px;
+    align-items: center;
+    gap: 10px;
   }
 
+.ticket-data{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ticket-name{
+  font-family: 'Neo Sans Arabic';
+  font-size: 11.67px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+  ::ng-deep .ticket-icon-right .p-button{
+    width: 35px;
+    height: 35px;
+    border: #8A74F9;
+    background-color: #8A74F91A;
+  }
+
+  ::ng-deep .ticket-icon-right .p-button:hover{
+    background-color: #937ee9; 
+    border-color: #FCFCFC;
+  }
+
+  ::ng-deep .ticket-icon-right .pi{
+    font-size: 10px;
+    background: #8A74F9;
+  }
+
+  ::ng-deep .ticket-icon-left .p-button{
+    width: 18px;
+    height: 15px;
+    border:.5px solid #8A74F9;
+    background-color: transparent;
+  }
+
+  ::ng-deep .ticket-icon-left .p-button:hover{
+    background-color: #937ee9; 
+    border-color: #FCFCFC;
+  }
+
+  ::ng-deep .ticket-icon-left .pi{
+    font-size: 10px;
+    color: #8A74F9;
+  }
+
+
   .ticket-details {
-    font-size: 0.8em;
     color: gray; 
     margin-left: 5px;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+
   }
 
   ::ng-deep .p-paginator {
     direction: ltr; 
   }
 
+  ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page {
+    border-radius: 5px;
+  }
+
+  ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+    background-color: #8A74F9;
+    color: white;
+  }
+
+
+  ::ng-deep .p-paginator .p-paginator-first,
+  ::ng-deep .p-paginator .p-paginator-last {
+    display: none;
+  }
+
+
+
+
+/* Media query for mobile phones (screen width less than 768px) */
+@media (max-width: 768px) {
+
+  .table-header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-left{
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 479px){
+  .header-right{
+    flex-direction: column;
+  }
+  .bars-icon{
+    display: flex;
+    gap: 20px;
+  }
+}
 
 

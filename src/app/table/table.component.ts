@@ -14,6 +14,7 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { Account } from '../shared/models/interfaces/user';
+import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
   selector: 'app-table',
@@ -31,6 +32,7 @@ import { Account } from '../shared/models/interfaces/user';
     IconFieldModule,
     InputIconModule,
     InputSwitchModule,
+    TooltipModule
   ],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss'

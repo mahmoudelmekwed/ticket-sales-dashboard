@@ -14,12 +14,12 @@ export const dummyAccounts: Account[] = [
       },
       ticketNo: 'T001',
       ticketValue: '$12',
-      cinema: 'Cinema A',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة ...',
       personCount: 2,
-      purchasingCount: '1',
+      purchasingCount: 'مرة واحدة',
       ticket: {
-        ticketName: 'تذكرة رقم 45',
-        ticketDetails: 'PDF document'
+        ticketName: 'تذكرة رقم 45.pdf',
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -31,12 +31,12 @@ export const dummyAccounts: Account[] = [
       },
       ticketNo: 'T002',
       ticketValue: '$15',
-      cinema: 'Cinema B',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة',
       personCount: 3,
-      purchasingCount: '2',
+      purchasingCount: 'مرة واحدة',
       ticket: {
-        ticketName: 'Standard',
-        ticketDetails: 'Standard admission ticket'
+        ticketName: 'تذكرة رقم 45.pdf',
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -48,12 +48,12 @@ export const dummyAccounts: Account[] = [
       },
       ticketNo: 'T003',
       ticketValue: '$10',
-      cinema: 'Cinema C',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة',
       personCount: 1,
-      purchasingCount: '3',
+      purchasingCount: 'مرة واحدة',
       ticket: {
-        ticketName: 'Standard',
-        ticketDetails: 'Single ticket'
+        ticketName: 'تذكرة رقم 45.pdf',
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -65,12 +65,12 @@ export const dummyAccounts: Account[] = [
       },
       ticketNo: 'T004',
       ticketValue: '$20',
-      cinema: 'Cinema D',
+      cinema: 'سينما مصر , مول العرب , برج الأطنان , سرايا القبة',
       personCount: 4,
-      purchasingCount: '1',
+      purchasingCount: 'مرة واحدة',
       ticket: {
-        ticketName: 'VIP',
-        ticketDetails: 'VIP seating'
+        ticketName: 'تذكرة رقم 45.pdf',
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -86,8 +86,8 @@ export const dummyAccounts: Account[] = [
       personCount: 1,
       purchasingCount: '2',
       ticket: {
-        ticketName: 'Economy',
-        ticketDetails: 'Economy class seating'
+        ticketName: 'تذكرة رقم 45.pdf',
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -104,7 +104,7 @@ export const dummyAccounts: Account[] = [
       purchasingCount: '3',
       ticket: {
         ticketName: 'Premium',
-        ticketDetails: 'Premium seating with extras'
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -121,7 +121,7 @@ export const dummyAccounts: Account[] = [
       purchasingCount: '1',
       ticket: {
         ticketName: 'Standard',
-        ticketDetails: 'Standard admission ticket'
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -138,7 +138,7 @@ export const dummyAccounts: Account[] = [
       purchasingCount: '4',
       ticket: {
         ticketName: 'Luxury',
-        ticketDetails: 'Luxury seating with complimentary drinks'
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -155,7 +155,7 @@ export const dummyAccounts: Account[] = [
       purchasingCount: '1',
       ticket: {
         ticketName: 'Standard',
-        ticketDetails: 'Standard admission ticket'
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -172,7 +172,7 @@ export const dummyAccounts: Account[] = [
       purchasingCount: '3',
       ticket: {
         ticketName: 'Economy',
-        ticketDetails: 'Economy class seating'
+        ticketDetails: '9mb . PDF'
       }
     },
     {
@@ -189,7 +189,7 @@ export const dummyAccounts: Account[] = [
       purchasingCount: '2',
       ticket: {
         ticketName: 'VIP',
-        ticketDetails: 'VIP seating with free popcorn'
+        ticketDetails: '9mb . PDF'
       }
     },
     {

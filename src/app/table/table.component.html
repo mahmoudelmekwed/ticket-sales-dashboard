@@ -26,15 +26,17 @@
                                 placeholder="بحث عن ..." />
                         </p-iconField>
                     </div>
-                    <p-button class="setting" icon="pi pi-sliders-h"/>
-                    <p-button class="sort" icon="pi pi-sort-alt"/>
+                    <div class="bars-icon">
+                      <p-button class="setting" icon="pi pi-sliders-h"/>
+                      <p-button class="sort" icon="pi pi-sort-alt"/>
+                    </div>
                 </div>
                 <div class="header-left">
-                    <div class="flex justify-content-center align-items-center mb-4 gap-2">
+                    <div class="switch-input">
                         <p-inputSwitch [(ngModel)]="metaKey" inputId="input-metakey" />
                         <label for="input-metakey">{{ metaKey ? 'مفعلة' : 'غير مفعلة' }}</label>
                     </div>
-                    <div class="card flex justify-content-center">
+                    <div class="ticket-reserve">
                         <p-button label="حجز تذكرة جديدة" />
                     </div>
                 </div>
@@ -42,22 +44,41 @@
         </ng-template>
         <ng-template pTemplate="header">
             <tr>
-                <th>#</th>
-                <th>المستخدم</th>
-                <th>رقم التذكرة</th>
-                <th pSortableColumn="ticketValue">
-                    قيمة التذكرة <p-sortIcon field="ticketValue" />
-                </th>
-                <th>السينمات</th>
-                <th>عدد الأشخاص</th>
-                <th>عدد مرات الشراء</th>
-                <th>التذكرة</th>
+              <th>
+                <div class="th-content">#</div>
+              </th>
+              <th>
+                <div class="th-content">المستخدم</div>
+              </th>
+              <th>
+                <div class="th-content">رقم التذكرة</div>
+              </th>
+              <th pSortableColumn="ticketValue">
+                <div class="th-content">
+                  قيمة التذكرة 
+                  <p-sortIcon field="ticketValue"></p-sortIcon>
+                </div>
+              </th>
+              <th>
+                <div class="th-content">السينمات</div>
+              </th>
+              <th>
+                <div class="th-content">عدد الأشخاص</div>
+              </th>
+              <th>
+                <div class="th-content">عدد مرات الشراء</div>
+              </th>
+              <th>
+                <div class="th-content">التذكرة</div>
+              </th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-account>
             <tr>
                 <td>
+                  <div class="account-id">
                     {{ account.id }}
+                  </div>
                 </td>
                 <td>
                     <div class="content-wrapper">
@@ -79,34 +100,44 @@
                     </div>
                   </td>
                   <td>
-                    {{ account.ticketNo }}
+                    <div class="ticket-no">
+                      {{ account.ticketNo }}
+                    </div>
                 </td>                  
                   <td>
-                    {{ account.ticketValue }}
+                    <div class="ticket-value">
+                      {{ account.ticketValue }}
+                    </div>
                 </td>                  
                   <td>
-                    {{ account.cinema }}
+                    <div class="cinema"  pTooltip="{{ account.cinema }}" tooltipPosition="top">
+                      {{ account.cinema }}
+                    </div>
                 </td>                  
                   <td>
-                    {{ account.personCount }}
+                    <div class="person-count">
+                      {{ account.personCount }}
+                    </div>
                 </td>                  
                   <td>
-                    {{ account.purchasingCount }}
+                    <div class="purchase-count">
+                      {{ account.purchasingCount }}
+                    </div>
                 </td>                  
                   <td>
                     <div class="ticket-content">
-                        <p-button 
-                        icon="pi pi-ticket"
-                        class="ticket-icon-right" 
-                        />
-                        <span>{{ account.ticket.ticketName }}</span>
-                        <span class="ticket-details">{{ account.ticket.ticketDetails }}</span>
-
+                      <div class="ticket-icon-right">
+                        <p-button icon="pi pi-ticket"/>
+                      </div>
+                      <div class="ticket-data">
+                        <div class="ticket-name">{{ account.ticket.ticketName }}</div>
+                        <div class="ticket-details">{{ account.ticket.ticketDetails }}</div>
+                      </div>
+                      <div class="ticket-icon-left">
                         <p-button
-                        icon="pi pi-download"
-                        class="ticket-icon-left"
-                        (click)="downloadTicket(account.ticket.ticketDetails, account.ticket.ticketName)"
-                        />
+                          icon="pi pi-download"
+                          (click)="downloadTicket(account.ticket.ticketDetails, account.ticket.ticketName)"/>
+                      </div>
                       </div>
                 </td>  
             </tr>
